@@ -21,15 +21,14 @@ body {
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
+  background-color: #ffffff;
   
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+ {
   margin-bottom: 0.625rem;
   font-weight: 700;
   line-height: 1.1;
@@ -48,60 +47,100 @@ h3 {
   font-size: 3rem;
 }
 
-h4 {
-  font-size: 2.5rem;
-}
-
 
 p {
   margin-bottom: 1rem;
 }
 
 
-/*header code updated*/
-.header {
-  padding: 20px;
+/*header*/
+header {
+  height:100px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  padding: 5px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #2f3131;
+  background-color: #262727;
   color: #ffffff;
 }
 
-.header h1 {
+.page-title {
   display: inline-block;
-  font-size: 48px;
+  padding: 5px;
+  background-color: #809768;
 }
 
-.header h1 .page-title {
-  color: #d9dcd6;
-}
-
-main {
-  width: 96%;
-  margin: 2rem auto;
+/*nav bar styling*/
+header .ul {
+  list-style-type: none;
 }
 
 
-/*orignal code above/
-
-/*speicifc element define/
-/*WIP for the image block section*/
-.img{
-  max-width: 100%;
-  max-height: 100%;
+header .nav ul li {
   display:inline-block;
+  margin-left: 25px ;
+  padding-bottom: 10px ;
+  float:right;
+  text-align: center;
+}
+
+.a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 10%;
+}
+/*Hero banner*/
+
+
+
+.hero{
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: #809768;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  position: relative;
+}
+
+.hero-text {
+  display: inline-block;
+  position: relative;
+  background-color: azure;
+  height: 50px;
+  width: 200px;
+  float:right;
+  margin-right: 50px;
+  margin-top: 200px;
+}
+
+/*main block section, properties for the Parent */
+main {
+  width: 100%;
+  margin: 2rem auto;
+  background-color: #d1d3d0;
+}
+
+.about {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
 
-
-
-/*this one still has issue not working*/
+/*left-title style, properties for the children*/
 .left-title {
   flex: 1;
   display: flex;
-  margin-right: 25px;
+  order:0;
+  display:inline-block;
+  width:30%;
+  border-right: 2px solid black;
 }
 
-
+/*work section*/
 .card-column-highlight {
   position: relative;
   padding:1rem;
